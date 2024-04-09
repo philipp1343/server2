@@ -1,0 +1,38 @@
+GET http://localhost:5000/give-equations
+
+###
+POST http://localhost:5000/solve-equation
+content-type: application/json
+
+{
+    "operators": [
+        "+",
+        "-",
+        "/"
+    ],
+    "lhs": [
+        5,
+        4,
+        6,
+        6
+    ],
+    "result": 8.0
+}
+###
+POST http://localhost:5000/solve-equation
+content-type: application/json
+
+{
+    "operators": [
+        "+",
+        "-",
+        "/"
+    ],
+    "lhs": [
+        3,
+        2,
+        2,
+        2
+    ],
+    "result": 8.0
+}
